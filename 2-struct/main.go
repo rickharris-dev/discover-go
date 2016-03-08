@@ -26,5 +26,5 @@ func main() {
 	}
 
 	fmt.Printf("Hello %s\n", u.Name)
-	fmt.Printf("%s who was born in %s would be %d years old today\n", u.Name, u.City, age)
+	fmt.Printf("%s who was born in %s would be %d years old today.\n", u.Name, u.City, age)
 }

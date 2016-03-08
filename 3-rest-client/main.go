@@ -18,8 +18,6 @@ func main() {
 	}
 	defer resp.Body.Close()
 
-	fmt.Printf("status code is %s\n", resp.Status)
-
 	contents, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
 		fmt.Printf("Error: %s\n", err)

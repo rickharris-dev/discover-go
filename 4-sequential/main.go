@@ -59,7 +59,7 @@ func main() {
 			fmt.Printf("Error: %s\n", err)
 			os.Exit(1)
 		}
-		fmt.Printf("The movie : %s was released in %s - the IMDB rating is %d%% with %s votes\n",
+		fmt.Printf("The movie : %s was released in %s - the IMDB rating is %d%% with %s votes.\n",
 			d.Title, d.Year, int(d.ImdbRating*10), d.ImdbVotes)
 	}
 	t2 := time.Now()

@@ -18,7 +18,7 @@ func main() {
 	}
 
 	if school := "Holberton School"; school == "Holberton School" {
-		fmt.Println("I am a student of", school)
+		fmt.Println("I am a student of the", school)
 	} else {
 		fmt.Println("What is school?")
 	}
