@@ -3,15 +3,12 @@ package main
 import (
 	"fmt"
 	"math/rand"
-	"time"
 )
 
 func main() {
-	s1 := rand.NewSource(time.Now().UnixNano())
-	r1 := rand.New(s1)
 	holbertonFounders := []string{"Rudy Rigot", "Sylvain Kalache", "Julien Barbier"}
 
-	if randomNumber := r1.Intn(100); randomNumber > 50 {
+	if randomNumber := rand.Intn(100); randomNumber > 50 {
 		fmt.Println("my random number is", randomNumber, "and is greater than 50")
 	} else {
 		fmt.Println("my random number is", randomNumber, "and is 50 or less")
